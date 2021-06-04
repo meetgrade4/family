@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            My Family book
+        </title>
+    </head>
+    <body>
+        <img id = "img" src="son.jpg">
+        <h4 id = "h4">
+            son.meet
+        </h4>
+        <button id = "change" onclick="change()">
+            Change
+        </button>
+        <script>
+            var image = ["son.jpg","brother.jpg","sister.jpg","father.jpg","mother.jpg"];
+            var na = ["son.meet","brother.manan","sister.manju","father.sumit","mother.puja"];
+            var i = "0";
+            function change() {
+                i++;
+                if (i > 4 ){
+                   i = 0 ;
+                }
+                document.getElementById("img").src = image[i];
+                document.getElementById("h4").innerHTML = na[i];
+            }
+        </script>
+    </body>
+</html>
